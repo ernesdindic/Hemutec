@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    </br><h1 class="mb-4 text-center">Dashboard</h1></br>
+    </br><h1 class="mb-4 text-center">Arbeitsberichte</h1></br>
 
         <!-- Filter Reports Card -->
          <div class="row">
