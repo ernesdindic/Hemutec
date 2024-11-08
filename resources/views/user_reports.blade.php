@@ -16,7 +16,7 @@
         <div class="text-right mt-3 mb-3">
             <a href="{{ route('dashboard') }}" class="btn btn-secondary">Zurück</a>
         </div>
-        <h2 class="mb-4">Benutzerberichte</h2>
+        <h2 class="mb-4">Benutzerberichte:</h2>
         
         <div class="card-body">
             <form method="GET" action="{{ route('user-reports') }}" class="mb-4">
