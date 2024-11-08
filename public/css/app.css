@@ -1,0 +1,167 @@
+/* Bootstrap CSS */
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(17 24 39); /* Darker background */
+    color: #e0e0e0; /* Softer light text color for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Dropdown List Styles */
+#stranke_list {
+    position: absolute;
+    width: 100%;
+    max-height: 200px; /* Limit height for overflow */
+    background-color: #25253a; /* Dark background for dropdown */
+    color: #e0e0e0; /* Light text color */
+    border: 1px solid #42425a; /* Subtle border for separation */
+    border-radius: 5px;
+    overflow-y: auto; /* Scroll if content exceeds max height */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    padding: 5px 0;
+}
+
+#stranke_list div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#stranke_list div:hover {
+    background-color: #3a3a50; /* Lighter hover background for visibility */
+    color: #ffffff; /* White text on hover */
+}
+
+
+/* Header Styles */
+h1 {
+    font-size: 2.8rem;
+    color: #00acc1; /* Calming, professional cyan */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px; /* Slightly rounder corners */
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6); /* Deeper shadow for more dimension */
+    background-color: rgba(31, 40, 59, 0.616);/* Slightly warmer dark for cards */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7); /* Enhanced shadow for hover effect */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0288d1; /* Calmer blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+    transform: scale(1.08); /* Slightly more noticeable hover scaling */
+}
+
+/* Table Styles */
+.table {
+    background-color: rgb(17 24 39); /* Consistent dark background for tables */
+    border-radius: 8px;
+    color: #ffffff; /* White text for contrast */
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: separate;
+}
+
+/* Table Header */
+.table thead th {
+    background-color: rgb(17 24 39); /* Softer contrast for header */
+    color: #ffffff;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #09090c; /* Lighter hover for contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    background-color: #25253a;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Softer shadow for modal */
+}
+
+/* Modal Header */
+.modal-header {
+    border-bottom: 1px solid #3a3a50; /* Soft border */
+    padding-bottom: 10px;
+}
+
+/* Modal Body */
+.modal-body {
+    background-color: #303044; /* Subtle contrast for modal body */
+}
+
+
+
+
+
+.flash {
+    animation: flash-animation 1s infinite;
+}
+
+@keyframes flash-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes blink {
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+#warning {
+color: red;
+animation: blink 1s infinite;
+}
+
+.hidden {
+display: none;
+}
